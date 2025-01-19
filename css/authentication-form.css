@@ -4,6 +4,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  width: 100%
+ 
 }
 
 body {
@@ -11,6 +13,8 @@ body {
 }
 
 .content {
+  display: flex;
+  gap: 25px;
   padding: 30px;
 }
 
@@ -27,6 +31,37 @@ p {
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+}
+
+.form-header, #sign-in-form, .form-input-control, .form-checkout-control, #sign-up-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header {
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+#sign-in-form,  #sign-up-form {
+  gap: 20px;
+}
+
+.form-input-control {
+  gap: 5px;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  flex: 1;
+  gap: 50px;
 }
 
 .subtext {
